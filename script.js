@@ -1,10 +1,11 @@
 var screen = "MENU";
-var img, img1, img2;
+var img, img1, img2, img3;
 
 function preload() {
   img = loadImage('icon.png');
   img1 = loadImage('office.jpg');
   img2 = loadImage('MC.png');
+  img3 = loadImage('lady.png');
 }
 
 function setup() {
@@ -42,6 +43,8 @@ function draw() {
 
     if (mouseIsPressed) {
       img2 = null;
+      img3.resize(100, 1000);
+      image(img3, 300, 70);
     }
   }
 }
